@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>About Bath Again | Women-Owned Bathroom Remodelers in El Paso</title>
+<meta name="description" content="Meet the Bath Again team, the same trusted local crew behind Floor Coverings International of El Paso, now remodeling bathrooms backed by a lifetime warranty." />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="About Bath Again | Women-Owned Bathroom Remodelers in El Paso" />
+<meta property="og:description" content="Meet the Bath Again team, the same trusted local crew behind Floor Coverings International of El Paso, now remodeling bathrooms backed by a lifetime warranty." />
+<meta property="og:image" content="assets/lifestyle-colorful-art-white.jpg" />
+<meta property="og:site_name" content="Bath Again" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="About Bath Again | Women-Owned Bathroom Remodelers in El Paso" />
+<meta name="twitter:description" content="Meet the Bath Again team, the same trusted local crew behind Floor Coverings International of El Paso, now remodeling bathrooms backed by a lifetime warranty." />
+<meta name="twitter:image" content="assets/lifestyle-colorful-art-white.jpg" />
+<meta name="theme-color" content="#0a2d56" />
+<meta name="geo.region" content="US-TX" />
+<meta name="geo.placename" content="El Paso" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; box-sizing: border-box; }
+  * { box-sizing: border-box; }
+  a { color: #0a2d56; }
+  a:hover { color: #c9a15a; }
+@media (max-width: 900px) {
+    [data-desktop-nav] { display: none !important; }
+    [data-desktop-cta] { display: none !important; }
+    [data-burger] { display: flex !important; }
+  }
+  @keyframes logoShine {
+    0%, 10% { transform: translateX(-120%); opacity: 0; }
+    22% { opacity: 1; }
+    48% { transform: translateX(220%); opacity: 1; }
+    60%, 100% { transform: translateX(220%); opacity: 0; }
+  }
+</style>
+</helmet>
+
+<div style="font-family:'Cormorant Garamond',serif;background:#ffffff;overflow:hidden;">
+
+<div data-header="true" style="display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,48px);background:#ffffff;position:sticky;top:0;z-index:100;box-shadow:0 1px 0 rgba(10,45,86,0.08);flex-wrap:wrap;gap:16px;transition:box-shadow .3s ease;">
+  <a href="index.html" style="display:flex;align-items:center;text-decoration:none;position:relative;overflow:hidden;">
+    <img src="assets/logo-navy-tight.png" alt="Bath Again bathroom remodeling El Paso" style="height:clamp(46px,7vw,66px);width:auto;display:block;" />
+    <div style="position:absolute;top:0;left:0;width:60%;height:100%;background:linear-gradient(100deg,transparent 30%,rgba(201,161,90,0.55) 50%,transparent 70%);animation:logoShine 5s ease-in-out infinite;pointer-events:none;"></div>
+  </a>
+  <div data-desktop-nav="true" style="display:flex;align-items:center;gap:clamp(14px,2.5vw,36px);flex-wrap:wrap;">
+    <a href="index.html" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#0a2d56;text-decoration:none;font-weight:600;padding:10px 0;" style-hover="color:#c9a15a;">HOME</a>
+    <a href="BathAgain.dc.html" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#0a2d56;text-decoration:none;font-weight:600;padding:10px 0;" style-hover="color:#c9a15a;">LET'S BATH AGAIN</a>
+    <a href="About.dc.html" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#c9a15a;text-decoration:none;font-weight:600;padding:10px 0;">ABOUT</a>
+    <a href="Contact.dc.html" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#0a2d56;text-decoration:none;font-weight:600;padding:10px 0;" style-hover="color:#c9a15a;">CONTACT</a>
+  </div>
+  <a data-desktop-cta="true" href="Contact.dc.html" style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:1.5px;color:#0a2d56;background:#c9a15a;padding:15px 30px;text-decoration:none;font-weight:600;transition:background .3s ease;" style-hover="background:#b38a45;">FREE ESTIMATE</a>
+  <button type="button" data-burger="true" onClick="{{ toggleMenu }}" aria-label="Open menu" style="display:none;flex-direction:column;justify-content:center;gap:5px;width:48px;height:48px;padding:12px;background:none;border:none;cursor:pointer;">
+    <span style="display:block;width:100%;height:2px;background:#0a2d56;"></span>
+    <span style="display:block;width:100%;height:2px;background:#0a2d56;"></span>
+    <span style="display:block;width:100%;height:2px;background:#0a2d56;"></span>
+  </button>
+</div>
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div data-drawer="true" style="position:fixed;inset:0;z-index:200;background:#0a2d56;display:flex;flex-direction:column;padding:20px clamp(20px,6vw,40px) 40px;overflow-y:auto;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+      <img src="assets/logo-white-tight.jpg" alt="Bath Again" style="height:52px;width:auto;display:block;" />
+      <button type="button" onClick="{{ closeMenu }}" aria-label="Close menu" style="width:48px;height:48px;background:none;border:none;color:#c9a15a;font-size:32px;line-height:1;cursor:pointer;">&times;</button>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <a href="index.html" onClick="{{ closeMenu }}" style="font-family:'Cinzel',serif;font-size:15px;letter-spacing:1.5px;color:#ffffff;text-decoration:none;font-weight:600;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.12);display:block;">HOME</a>
+      <a href="BathAgain.dc.html" onClick="{{ closeMenu }}" style="font-family:'Cinzel',serif;font-size:15px;letter-spacing:1.5px;color:#ffffff;text-decoration:none;font-weight:600;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.12);display:block;">LET'S BATH AGAIN</a>
+      <a href="About.dc.html" onClick="{{ closeMenu }}" style="font-family:'Cinzel',serif;font-size:15px;letter-spacing:1.5px;color:#c9a15a;text-decoration:none;font-weight:600;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.12);display:block;">ABOUT</a>
+      <a href="Contact.dc.html" onClick="{{ closeMenu }}" style="font-family:'Cinzel',serif;font-size:15px;letter-spacing:1.5px;color:#ffffff;text-decoration:none;font-weight:600;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.12);display:block;">CONTACT</a>
+    </div>
+    <a href="Contact.dc.html" onClick="{{ closeMenu }}" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#0a2d56;background:#c9a15a;padding:18px 30px;text-decoration:none;font-weight:600;text-align:center;margin-top:28px;display:block;">FREE ESTIMATE</a>
+  </div>
+</sc-if>
+<sc-if value="{{ lightboxOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLightbox }}" style="position:fixed;inset:0;z-index:300;background:rgba(6,18,34,0.94);display:flex;align-items:center;justify-content:center;padding:clamp(12px,4vw,56px);cursor:zoom-out;">
+    <img src="{{ lightboxSrc }}" alt="{{ lightboxAlt }}" style="max-width:100%;max-height:100%;object-fit:contain;display:block;box-shadow:0 24px 70px rgba(0,0,0,0.55);" />
+    <button type="button" onClick="{{ closeLightbox }}" aria-label="Close image" style="position:absolute;top:clamp(12px,3vw,28px);right:clamp(12px,3vw,28px);width:48px;height:48px;background:rgba(255,255,255,0.14);border:none;color:#ffffff;font-size:26px;line-height:1;cursor:pointer;">&times;</button>
+  </div>
+</sc-if>
+
+<div style="position:relative;height:64vh;min-height:min(460px,78vh);overflow:hidden;background:#0a2d56;">
+  <img data-parallax="true" src="assets/lifestyle-charcoal-door.jpg" alt="Bath Again bathroom remodel" style="position:absolute;inset:0;width:100%;height:130%;object-fit:cover;transform:scale(1.05);opacity:{{ heroOpacity0 }};transition:opacity 1.8s ease;" />
+  <img data-parallax="true" src="assets/lifestyle-colorful-art-white.jpg" alt="Bath Again bathroom remodel" style="position:absolute;inset:0;width:100%;height:130%;object-fit:cover;transform:scale(1.05);opacity:{{ heroOpacity1 }};transition:opacity 1.8s ease;" />
+  <img data-parallax="true" src="assets/lifestyle-gray-marble-bar.jpg" alt="Bath Again bathroom remodel" style="position:absolute;inset:0;width:100%;height:130%;object-fit:cover;transform:scale(1.05);opacity:{{ heroOpacity2 }};transition:opacity 1.8s ease;" />
+  <img data-parallax="true" src="assets/room-black-mist.jpg" alt="Bath Again bathroom remodel" style="position:absolute;inset:0;width:100%;height:130%;object-fit:cover;transform:scale(1.05);opacity:{{ heroOpacity3 }};transition:opacity 1.8s ease;" />
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,26,48,0.92) 0%,rgba(6,26,48,0.6) 45%,rgba(6,26,48,0.2) 75%);"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 clamp(20px,5vw,56px);max-width:600px;color:#ffffff;">
+    <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:3px;color:#c9a15a;margin-bottom:20px;">EXPERIENCE YOU CAN TRUST</div>
+    <h1 style="font-family:'Cinzel',serif;font-size:clamp(29px,5.2vw,46px);line-height:1.2;margin:0 0 20px;">A New Name.<br/>A Team You Can Trust.</h1>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:#c9a15a;margin:0;">Bath Again may be new, but our team isn't.</p>
+  </div>
+</div>
+
+<div style="padding:clamp(56px,8vw,96px) clamp(20px,5vw,48px);max-width:900px;margin:0 auto;text-align:center;">
+  <p data-reveal="true" style="opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1);font-family:'Cormorant Garamond',serif;font-size:22px;color:#42506a;line-height:1.7;margin:0;">Bath Again is locally owned and operated by the same team behind Floor Coverings International of El Paso, bringing the same commitment to service, quality and customer satisfaction into bathroom remodeling. Same local ownership. Same trusted team. A whole new way to remodel.</p>
+</div>
+
+<div style="display:flex;gap:0;flex-wrap:wrap;align-items:center;max-width:1400px;margin:0 auto;">
+  <div data-reveal="true" style="opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1);flex:1 1 460px;min-width:320px;overflow:hidden;height:clamp(260px,42vw,480px);">
+    <img data-lightbox="true" src="assets/lifestyle-colorful-art-white.jpg" alt="Bright white bathroom with colorful art" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;transform:scale(1);transition:transform .8s cubic-bezier(.2,.7,.2,1);" style-hover="transform:scale(1.06);" />
+  </div>
+  <div data-reveal="true" style="opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) .1s;flex:1 1 380px;min-width:300px;padding:clamp(28px,5vw,56px);">
+    <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px;color:#c9a15a;margin-bottom:14px;">LOCALLY &amp; WOMEN OWNED</div>
+    <h2 style="font-family:'Cinzel',serif;font-size:clamp(22px,3.5vw,30px);color:#0a2d56;margin:0 0 20px;line-height:1.3;">Local Experience.<br/>Personal Service.</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:19px;color:#42506a;line-height:1.6;margin:0;">Based right here in El Paso, our team is here before, during and after your project &mdash; people you can actually reach, with solutions designed around your home and your needs.</p>
+  </div>
+</div>
+
+<div style="padding:clamp(56px,8vw,96px) clamp(20px,5vw,48px);max-width:1280px;margin:0 auto;">
+  <div data-reveal="true" style="opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1);text-align:center;margin-bottom:56px;">
+    <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px;color:#c9a15a;margin-bottom:14px;">HOW WE EARN YOUR TRUST</div>
+    <h2 style="font-family:'Cinzel',serif;font-size:clamp(25px,4.2vw,36px);color:#0a2d56;margin:0;">What Sets Us Apart</h2>
+  </div>
+  <div data-reveal="true" style="opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) .1s;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:32px 48px;">
+    <div style="display:flex;gap:14px;align-items:flex-start;"><span style="color:#c9a15a;font-size:20px;line-height:1.4;">&#9733;</span><span style="font-family:'Cinzel',serif;font-size:17px;color:#0a2d56;">A Local Team You Can Trust</span></div>
+    <div style="display:flex;gap:14px;align-items:flex-start;"><span style="color:#c9a15a;font-size:20px;line-height:1.4;">&#9733;</span><span style="font-family:'Cinzel',serif;font-size:17px;color:#0a2d56;">Clear Communication &amp; Support</span></div>
+    <div style="display:flex;gap:14px;align-items:flex-start;"><span style="color:#c9a15a;font-size:20px;line-height:1.4;">&#9733;</span><span style="font-family:'Cinzel',serif;font-size:17px;color:#0a2d56;">Transparent Pricing</span></div>
+    <div style="display:flex;gap:14px;align-items:flex-start;"><span style="color:#c9a15a;font-size:20px;line-height:1.4;">&#9733;</span><span style="font-family:'Cinzel',serif;font-size:17px;color:#0a2d56;">Custom Solutions</span></div>
+    <div style="display:flex;gap:14px;align-items:flex-start;"><span style="color:#c9a15a;font-size:20px;line-height:1.4;">&#9733;</span><span style="font-family:'Cinzel',serif;font-size:17px;color:#0a2d56;">Fast, Professional Installation</span></div>
+    <div style="display:flex;gap:14px;align-items:flex-start;"><span style="color:#c9a15a;font-size:20px;line-height:1.4;">&#9733;</span><span style="font-family:'Cinzel',serif;font-size:17px;color:#0a2d56;">A Focus on Your Satisfaction</span></div>
+  </div>
+</div>
+
+<div style="display:flex;gap:0;flex-wrap:wrap-reverse;align-items:center;max-width:1400px;margin:0 auto;background:#f8f6f1;">
+  <div data-reveal="true" style="opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1);flex:1 1 380px;min-width:300px;padding:clamp(28px,5vw,56px);text-align:center;">
+    <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px;color:#c9a15a;margin-bottom:14px;">TRUSTED IN EL PASO</div>
+    <h2 style="font-family:'Cinzel',serif;font-size:26px;color:#0a2d56;margin:0 0 14px;line-height:1.35;">Homeowners Already Trust Our Team</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#5c6b80;margin:0;">The same crew behind Floor Coverings International of El Paso &mdash; now bringing that care to bathrooms.</p>
+  </div>
+  <div data-reveal="true" style="opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) .1s;flex:1 1 460px;min-width:320px;overflow:hidden;height:clamp(240px,38vw,420px);">
+    <img data-lightbox="true" src="assets/lifestyle-gray-marble-bar.jpg" alt="Gray marble shower with grab bar" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;transform:scale(1);transition:transform .8s ease;" style-hover="transform:scale(1.06);" />
+  </div>
+</div>
+
+<div style="padding:clamp(56px,8vw,96px) clamp(20px,5vw,48px);max-width:1000px;margin:0 auto;text-align:center;">
+  <div data-reveal="true" style="opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1);">
+    <div style="display:inline-flex;align-items:center;justify-content:center;width:120px;height:120px;border-radius:50%;border:3px solid #c9a15a;margin-bottom:28px;">
+      <span style="font-family:'Cinzel',serif;font-size:13px;color:#0a2d56;letter-spacing:1px;line-height:1.4;">LIFETIME<br/>WARRANTY</span>
+    </div>
+    <h2 style="font-family:'Cinzel',serif;font-size:clamp(23px,3.8vw,32px);color:#0a2d56;margin:0 0 20px;">Backed for Life</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:19px;color:#42506a;line-height:1.65;margin:0;">Every Bath Again system installed by our approved team is backed by a Lifetime Warranty &mdash; because a beautiful bathroom should stay beautiful for as long as you own your home.</p>
+  </div>
+</div>
+
+<div style="padding:clamp(56px,8vw,96px) clamp(20px,5vw,48px);max-width:1100px;margin:0 auto;">
+  <div style="text-align:center;margin-bottom:56px;">
+    <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px;color:#c9a15a;margin-bottom:14px;">OUR TEAM</div>
+    <h3 style="font-family:'Cinzel',serif;font-size:clamp(22px,3.5vw,30px);color:#0a2d56;margin:0;">The People Behind Bath Again</h3>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:48px;">
+    <div style="text-align:center;">
+      <img src="assets/team-linda.avif" alt="Linda Leach" style="width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:50% 12%;margin:0 auto 20px;display:block;" />
+      <div style="font-family:'Cinzel',serif;font-size:18px;color:#0a2d56;margin-bottom:12px;">Linda Leach</div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#5c6b80;line-height:1.6;margin:0;">Linda's heart flutters at the thought of interior design, thrifting, and estate sales. She lives by the philosophy of eating dessert before her meal &mdash; because you never know what life will bring. Her favorite way to spend her time is walking along the Rio Grande with her husband and their two wire-haired pointing Griffons.</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="assets/team-stephanie.avif" alt="Stephanie Alderete" style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 20px;display:block;" />
+      <div style="font-family:'Cinzel',serif;font-size:18px;color:#0a2d56;margin-bottom:12px;">Stephanie Alderete</div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#5c6b80;line-height:1.6;margin:0;">When Stephanie isn't making homemade hummus, she's on the couch sharing popcorn with her Basset hounds, Bernie and Wyn. Her favorite way to unwind is sipping Mai Tais in a hammock on the island of Bora Bora with her husband.</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="assets/team-marco.avif" alt="Marco Puentes" style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 20px;display:block;" />
+      <div style="font-family:'Cinzel',serif;font-size:18px;color:#0a2d56;margin-bottom:12px;">Marco Puentes</div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#5c6b80;line-height:1.6;margin:0;">At his core, Marco is a deep thinker who channels his creativity through his side business of powder-coating automobile parts. The best way to ignite his taste buds is with a perfectly cooked piece of Chico's Tacos chicken. His goatee grants him the strength of a thousand Chucos.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background:#c9a15a;padding:clamp(44px,6vw,72px) clamp(20px,5vw,48px);text-align:center;">
+  <h2 style="font-family:'Cinzel',serif;font-size:clamp(23px,3.8vw,32px);color:#0a2d56;margin:0 0 24px;">Let's talk about your bathroom.</h2>
+  <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;">
+    <a href="Contact.dc.html" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#ffffff;background:#0a2d56;padding:18px 36px;text-decoration:none;font-weight:600;transition:background .3s ease;" style-hover="background:#132f57;">GET MY FREE ESTIMATE</a>
+    <button type="button" onClick="{{ openFinancing }}" style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#0a2d56;background:none;border:1px solid #0a2d56;padding:18px 36px;font-weight:600;cursor:pointer;transition:background .3s ease,color .3s ease;" style-hover="background:#0a2d56;color:#ffffff;">REQUEST FINANCING</button>
+  </div>
+</div>
+
+<dc-import name="FinancingModal" open="{{ financingOpen }}" on-close="{{ closeFinancing }}" hint-size="100%,100%"></dc-import>
+
+<footer style="background:#0a2d56;color:#ffffff;padding:clamp(40px,6vw,64px) clamp(20px,5vw,48px) 0;border-top:1px solid rgba(255,255,255,0.1);">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:48px;max-width:1280px;margin:0 auto;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.15);">
+    <div>
+      <img src="assets/logo-white-tight.jpg" alt="Bath Again" style="height:clamp(68px,10vw,96px);width:auto;display:block;margin-bottom:16px;" />
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:#c9a15a;margin:0 0 16px;">Love Your Bathroom Again</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:17px;color:rgba(255,255,255,0.75);line-height:1.6;margin:0;max-width:320px;">Locally &amp; women owned. The same trusted team behind Floor Coverings International of El Paso.</p>
+    </div>
+    <div>
+      <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#c9a15a;margin-bottom:18px;">EXPLORE</div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#ffffff;text-decoration:none;padding:9px 0;display:inline-block;" style-hover="color:#c9a15a;">Home</a>
+        <a href="BathAgain.dc.html" style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#ffffff;text-decoration:none;padding:9px 0;display:inline-block;" style-hover="color:#c9a15a;">Bath Again</a>
+        <a href="About.dc.html" style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#ffffff;text-decoration:none;padding:9px 0;display:inline-block;" style-hover="color:#c9a15a;">About Us</a>
+        <a href="Contact.dc.html" style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#ffffff;text-decoration:none;padding:9px 0;display:inline-block;" style-hover="color:#c9a15a;">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#c9a15a;margin-bottom:18px;">GET IN TOUCH</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="mailto:Linda@BathAgain.com" style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#ffffff;text-decoration:none;padding:9px 0;display:inline-block;" style-hover="color:#c9a15a;">Linda@BathAgain.com</a>
+        <a href="tel:9155253309" style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(255,255,255,0.65);text-decoration:none;padding:9px 0;display:inline-block;" style-hover="color:#c9a15a;">915.525.3309</a>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(255,255,255,0.65);">Serving El Paso &amp; surrounding areas</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;color:#c9a15a;margin-bottom:18px;">OUR PROMISE</div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:17px;color:rgba(255,255,255,0.75);line-height:1.6;margin:0 0 18px;">Backed by a Lifetime Warranty, with installation in as little as 48 hours.</p>
+      <a href="Contact.dc.html" style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:1.5px;color:#c9a15a;border:1px solid #c9a15a;padding:12px 20px;text-decoration:none;display:inline-block;" style-hover="background:#c9a15a;color:#0a2d56;">FREE ESTIMATE</a>
+    </div>
+  </div>
+  <div style="max-width:1280px;margin:0 auto;padding:24px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(255,255,255,0.55);">&copy; 2026 Bath Again. All rights reserved.</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(255,255,255,0.55);">A Floor Coverings International of El Paso company.</span>
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { financingOpen: false, heroIndex: 0, menuOpen: false, lightboxSrc: null, lightboxAlt: '' };
+  heroSrcs = ['assets/lifestyle-charcoal-door.jpg', 'assets/lifestyle-colorful-art-white.jpg', 'assets/lifestyle-gray-marble-bar.jpg', 'assets/room-black-mist.jpg'];
+
+  componentDidMount() {
+    document.addEventListener('click', this.onLightboxClick);
+    document.addEventListener('keydown', this.onEscKey);
+    window.addEventListener('resize', this.onWidthChange, { passive: true });
+    let pending = Array.from(document.querySelectorAll('[data-reveal]'));
+    const parallaxEls = document.querySelectorAll('[data-parallax]');
+    const header = document.querySelector('[data-header]');
+    this.heroTimer = setInterval(() => {
+      const next = (this.state.heroIndex + 1) % this.heroSrcs.length;
+      this.setState({ heroIndex: next });
+    }, 5500);
+
+    const checkReveal = () => {
+      const h = window.innerHeight;
+      pending = pending.filter((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < h * 0.94 && rect.bottom > -300) {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          return false;
+        }
+        return true;
+      });
+    };
+
+    let ticking = false;
+    const onScroll = () => {
+      const y = window.scrollY;
+      parallaxEls.forEach((el) => { el.style.transform = `translateY(${Math.min(y, 600) * 0.22}px) scale(1.05)`; });
+      if (header) {
+        header.style.boxShadow = y > 40 ? '0 4px 18px rgba(10,45,86,0.16)' : '0 1px 0 rgba(10,45,86,0.08)';
+        header.style.padding = y > 40 ? '10px clamp(16px,4vw,48px)' : '14px clamp(16px,4vw,48px)';
+      }
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(() => { checkReveal(); ticking = false; });
+      }
+    };
+
+    checkReveal();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    setTimeout(checkReveal, 300);
+  }
+
+  openFinancing = () => this.setState({ financingOpen: true });
+  closeFinancing = () => this.setState({ financingOpen: false });
+
+  componentWillUnmount() {
+    document.removeEventListener('click', this.onLightboxClick);
+    document.removeEventListener('keydown', this.onEscKey);
+    window.removeEventListener('resize', this.onWidthChange);
+    if (this.heroTimer) clearInterval(this.heroTimer);
+  }
+
+  toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen });
+  closeMenu = () => this.setState({ menuOpen: false });
+  closeLightbox = () => this.setState({ lightboxSrc: null, lightboxAlt: '' });
+
+  onLightboxClick = (e) => {
+    const t = e.target;
+    if (!t || !t.closest) return;
+    const el = t.closest('[data-lightbox]');
+    if (!el) return;
+    e.preventDefault();
+    this.setState({ lightboxSrc: el.getAttribute('src'), lightboxAlt: el.getAttribute('alt') || '' });
+  };
+
+  onEscKey = (e) => {
+    if (e.key === 'Escape') this.setState({ lightboxSrc: null, menuOpen: false });
+  };
+
+  onWidthChange = () => {
+    if (window.innerWidth > 900 && this.state.menuOpen) this.setState({ menuOpen: false });
+  };
+
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen,
+      toggleMenu: this.toggleMenu,
+      closeMenu: this.closeMenu,
+      lightboxOpen: !!this.state.lightboxSrc,
+      lightboxSrc: this.state.lightboxSrc,
+      lightboxAlt: this.state.lightboxAlt || '',
+      closeLightbox: this.closeLightbox,
+      financingOpen: this.state.financingOpen,
+      openFinancing: this.openFinancing,
+      closeFinancing: this.closeFinancing,
+      heroOpacity0: this.state.heroIndex === 0 ? 1 : 0,
+      heroOpacity1: this.state.heroIndex === 1 ? 1 : 0,
+      heroOpacity2: this.state.heroIndex === 2 ? 1 : 0,
+      heroOpacity3: this.state.heroIndex === 3 ? 1 : 0
+    };
+  }
+}
+
+</script>
+</body>
+</html>
